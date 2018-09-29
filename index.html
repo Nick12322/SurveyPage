@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+
+
+    <h1 id="title">Survey Form </h1>
+
+    <div class="container">
+        <p id="description"> Input forms for FreeCodeCamp! </p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name </label>
+            <input type="text" placeholder="Name" id="name" required/>
+            <br/>
+            <br/>
+            <label for="email" id="email-label">Email </label>
+            <input type="email" placeholder="Email" id="email" required/>
+            <br/>
+            <br/>
+            <label for="number" id="number-label">Age </label>
+            <input type="number" placeholder="Age" id="number" min="12" max="100" required/>
+            <br/>
+            <br/>
+            <label for="dropdown" id="dropdown-label">Select what best describes you</label>
+            <select name="role" id="dropdown">
+                <option value="student">Student</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="retired">Retired</option>
+                <option value="other">Other</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="very-likely" id="radio-buttons-label">How likely are you to recommend Free Code Camp to a friend?</label>
+            <input type="radio" name="recommend" id="very-likely" value="Very Likely">Very Likely</input>
+            <input type="radio" name="recommend" id="likely" value="Likely">Likely</input>
+            <input type="radio" name="recommend" id="not-likely" value="Not Likely"> Not Likely </input>
+
+            <br/>
+            <br/>
+
+            <fieldset>
+                <legend>
+                    What have been your favorite parts to work on so far? </legend>
+
+                <div>
+                    <input type="checkbox" id="frontend" name="favorites" value="frontend" checked />
+                    <label for="frontend">Front End</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="backend" name="favorites" value="backend" />
+                    <label for="backend">Back End</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="challenges" name="favorites" value="challenges" />
+                    <label for="challenges">Challenges</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="data-visualization" name="favorites" value="data-visualization" />
+                    <label for="data-visualization">Data Visualization</label>
+                </div>
+
+            </fieldset>
+            <p>Any additional comments? </p>
+            <textarea id="textarea" rows="8" cols="100"></textarea>
+            <br/>
+            <button class="btn" id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
